@@ -1,4 +1,4 @@
-![FX-4CR Hiel Adapter](./images/radio.jpg)
+![FX-4CR Hiel Adapter](./images/Radio.jpg)
 # FX-4CR Dynamic Mic Preamp w/PTT (Heil Micro Pro Adapter)
 This project provides a simple, high-performance active preamplifier designed to adapt low-impedance dynamic microphones—specifically the Heil Micro Pro Headset—to the FX-4CR QRP transceiver.
 
@@ -8,7 +8,7 @@ The FX-4CR was designed for high-impedance electret microphones. When using a lo
 
 1. **Signal Level:** The dynamic element output is too low for the radio's internal preamp, resulting in faint or non-existent audio.
 
-2. **Firmware Compatibility:** Using **F5BUD's V2 Firmware**, the radio performs a startup check on the microphone line. A low-impedance dynamic mic looks like a near-short to the DC bias sensing logic. In many cases, the firmware will detect this as a fault and **prevent the radio from powering up** to protect the internal circuitry.
+2. **Firmware Compatibility:** Using **F5BUD's V2 Firmware**, (I believe) the radio performs a startup check on the microphone line. A low-impedance dynamic mic looks like a near-short to the DC bias sensing logic. In my experience, the firmware will detect this as a fault and **prevent the radio from powering up** to protect the internal circuitry.
 
 This "Parasitic Power" circuit solves both issues by providing the necessary gain and presenting the correct impedance/DC load to the radio.
 
@@ -17,7 +17,7 @@ This "Parasitic Power" circuit solves both issues by providing the necessary gai
 * **No External Power:** Runs off the DC bias provided by the FX-4CR MIC jack.
 * **Low Noise:** Uses the 2N3904 NPN transistor for clean audio amplification.
 * **Firmware Friendly:** Corrects the impedance mismatch so the V2 firmware allows normal boot-up.
-* **Compact:** Designed to fit in a 3D-printed enclosure All the components fit on the TRS breakout board.
+* **Compact:** Designed to fit in a 3D-printed enclosure. All the components fit on the TRS breakout board.
 
 ## Parts List
 
@@ -35,7 +35,7 @@ This "Parasitic Power" circuit solves both issues by providing the necessary gai
 
 ## Schematic
 
-![Circuit Schematic](./schematic_25.png)
+![Circuit Schematic](./images/schematic_25.png)
 
 *The circuit uses a Collector-Feedback Bias configuration. This provides stable gain and handles the "parasitic" power extraction from the radio's MIC line.*
 

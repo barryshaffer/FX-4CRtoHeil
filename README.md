@@ -1,3 +1,4 @@
+![FX-4CR Hiel Adapter](./images/radio.jpg)
 # FX-4CR Dynamic Mic Preamp w/PTT (Heil Micro Pro Adapter)
 This project provides a simple, high-performance active preamplifier designed to adapt low-impedance dynamic microphones—specifically the Heil Micro Pro Headset—to the FX-4CR QRP transceiver.
 
@@ -27,14 +28,14 @@ This "Parasitic Power" circuit solves both issues by providing the necessary gai
 | **R2** | 100kΩ | Base Bias Resistor (Feedback) |
 | **C1** | 10µF | Input DC Blocking Capacitor (Tantalum preferred) |
 | **C2** (Opt) | 10nF | RF Bypass Capacitor (Ceramic Disc) |
-| **PTT SW** | Push Button Switch ![Amazon](https://www.amazon.com/dp/B0BNM5P5BC?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_25) |
+| **PTT SW** | Momentary Switch | Push Button Switch ![Amazon](https://www.amazon.com/dp/B0BNM5P5BC?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_25) |
 | **Plug** | 3.5mm TRS M | 3.5mm Male TRS to bare wire ![Amazon](https://www.amazon.com/dp/B09Y1BWKB5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1)|
 | **Jack** | 3.5mm TRS F | 3.5mm Female PCB Breakout Board ![Amazon](https://www.amazon.com/dp/B08H8DR7ZW?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_120) | 
 | **Case** | Custom | 3D Printed STL (included in `/stl` folder) |
 
 ## Schematic
 
-![Circuit Schematic](./images/ham_notes_25.png)
+![Circuit Schematic](./schematic_25.png)
 
 *The circuit uses a Collector-Feedback Bias configuration. This provides stable gain and handles the "parasitic" power extraction from the radio's MIC line.*
 

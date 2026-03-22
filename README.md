@@ -34,25 +34,25 @@ This "Parasitic Power" circuit solves both issues by providing the necessary gai
 
 ## Schematic
 
-![Circuit Schematic Placeholder](./Images/ham_notes_25.png)
+![Circuit Schematic](./images/ham_notes_25.png)
 
 *The circuit uses a Collector-Feedback Bias configuration. This provides stable gain and handles the "parasitic" power extraction from the radio's MIC line.*
 
 ### TRS Breakout board
-![Board Layout](./Images/board.jpg)
+![Board Layout](./images/board.jpg)
 I found the breakout board perfect for providing a secure platform for soldering all the components of the amplifier and switch. Since there are only two contacts needed for the Hiel Mic, The TSH and RSH contacts can be removed for the jack so that their pads on the pcb can be repurpose for mounting the components. Ring and Sleve were also jumpered to provide more GND solder contacts. 
 
 ## 3D Printing & Assembly
 
-The `/stl` directory contains the housing files.
+The `/stl` directory contains the files for the case.
 
 * **Print Settings:** 0.2mm layer height, PETG or PLA+.
-* **Assembly:** The circuit is small enough to be "dead-bug" soldered. Ensure you use shielded cable for the run to the headset to prevent RFI.
-* **RFI Note:** If you experience "RF in the audio" during high-power peaks, ensure the 10nF cap is soldered as close to the 3.5mm plug as possible.
+* **Assembly:** The circuit is small enough to be "dead-bug" soldered if you don't want to use the breakout board and case. I was a lazy with the case design so the cap is superglued in place you may wish to remix to a snap fit design.
+* **RFI Note:** In my testing the 10nF cap was sufficient to keep RFI off the mic input, you may also which to mitigate with a ferrite bead.
 
 ## License
 
 This project is released under the MIT License. Feel free to modify and share.
 
 ---
-*Developed and tested by Barry Shaffer (KK7JXG) for the FX-4CR community.*
+*Developed and tested by Barry Shaffer (KD3Q) for the FX-4CR community.*

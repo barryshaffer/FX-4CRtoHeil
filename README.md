@@ -1,4 +1,4 @@
-# FX-4CR Dynamic Mic Preamp (Heil Micro Pro Adapter)
+# FX-4CR Dynamic Mic Preamp w/PTT (Heil Micro Pro Adapter)
 This project provides a simple, high-performance active preamplifier designed to adapt low-impedance dynamic microphones—specifically the Heil Micro Pro Headset—to the FX-4CR QRP transceiver.
 
 ## Background
@@ -27,21 +27,20 @@ This "Parasitic Power" circuit solves both issues by providing the necessary gai
 | **R2** | 100kΩ | Base Bias Resistor (Feedback) |
 | **C1** | 10µF | Input DC Blocking Capacitor (Tantalum preferred) |
 | **C2** (Opt) | 10nF | RF Bypass Capacitor (Ceramic Disc) |
+| **PTT SW** | Push Button Switch ![Amazon](https://www.amazon.com/dp/B0BNM5P5BC?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_25) |
 | **Plug** | 3.5mm TRS M | 3.5mm Male TRS to bare wire ![Amazon](https://www.amazon.com/dp/B09Y1BWKB5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1)|
 | **Jack** | 3.5mm TRS F | 3.5mm Female PCB Breakout Board ![Amazon](https://www.amazon.com/dp/B08H8DR7ZW?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_120) | 
 | **Case** | Custom | 3D Printed STL (included in `/stl` folder) |
 
 ## Schematic
 
-![Circuit Schematic Placeholder](./images/schematic.png)
+![Circuit Schematic Placeholder](./Images/ham_notes_25.png)
 
 *The circuit uses a Collector-Feedback Bias configuration. This provides stable gain and handles the "parasitic" power extraction from the radio's MIC line.*
 
-### Pinout (FX-4CR MIC Jack)
-
-* **Tip:** Audio In / DC Bias (Connect to R1)
-* **Ring:** PTT (Pass-through to headset PTT switch)
-* **Sleeve:** Ground
+### TRS Breakout board
+![Board Layout](./Images/board.jpg)
+I found the breakout board perfect for providing a secure platform for soldering all the components of the amplifier and switch. Since there are only two contacts needed for the Hiel Mic, The TSH and RSH contacts can be removed for the jack so that their pads on the pcb can be repurpose for mounting the components. Ring and Sleve were also jumpered to provide more GND solder contacts. 
 
 ## 3D Printing & Assembly
 

@@ -41,7 +41,7 @@ This "Parasitic Power" circuit solves both issues by providing the necessary gai
 
 ### TRS Breakout board
 ![Board Layout](./images/board.jpg)
-I found the breakout board perfect for providing a secure platform for soldering all the components of the amplifier and switch. Since there are only two contacts needed for the Hiel Mic, The TSH and RSH contacts can be removed for the jack so that their pads on the pcb can be repurpose for mounting the components. Ring and Sleve were also jumpered to provide more GND solder contacts. 
+I found the breakout board perfect for providing a secure platform for soldering all the components of the amplifier and switch. Since there are only two contacts needed for the Heil Mic, The TSH and RSH contacts can be removed for the jack so that their pads on the pcb can be repurpose for mounting the components. Ring and Sleve were also jumpered to provide more GND solder contacts. 
 
 ## 3D Printing & Assembly
 ![Case assembly](./images/case.png)
